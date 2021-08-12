@@ -1,0 +1,21 @@
+<!DOCTYPE html>
+<html lang="ru">
+
+<!-- проверил переменную для title - вроде работает. Этого достаточно или нужно ещё что-то куда-то прописывать? -->
+@@include('../parts/main-components/_head.html', {
+  "title":"BLOG"
+})
+
+<body>
+  <!-- Оболочка -->
+  <div class="wrapper">
+    <div class="content">
+      @@include('../parts/main-components/_header.html')
+      <main class="main"></main>
+    </div>
+    @@include('../parts/main-components/_footer.html')
+  </div>
+  @@include('../parts/main-components/_footer-scripts.html')
+</body>
+
+</html> 
